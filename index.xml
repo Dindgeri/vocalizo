@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE website [
+	<!ENTITY css "http://www.w3.org/2001/XMLSchema-css">
+]>
 <website
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:css="http://www.w3.org/2001/XMLSchema-css">
@@ -139,20 +142,20 @@
         }
       }
 
-      ]]>
+			]]>
 		</style>
 	</head>
 	<body>
 		<header>
 			<!-- SVG Logo for Singing Classes -->
 			<svg
-				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
+				xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24">
 				<path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
 			</svg>
 			<!-- Burger Menu for Singing Classes -->
 			<div class="burger-menu">
 				<svg
-					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo">
 					<path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
 				</svg>
 			</div>
@@ -211,68 +214,67 @@
 			</section>
 		</div>
 		<script>
+			// Function to handle form submission
+			function handleSubmit(event) {
+				event.preventDefault();
 
-  // Function to handle form submission
-  function handleSubmit(event) {
-    event.preventDefault();
+				// Get user input values
+				const name = document.getElementById("name").value;
+				const email = document.getElementById("email").value;
+				const phone = document.getElementById("phone").value;
+				const availability = document.getElementById("availability").value;
+				const equipment = document.getElementById("equipment").value;
 
-    // Get user input values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const availability = document.getElementById("availability").value;
-    const equipment = document.getElementById("equipment").value;
+				// Create the custom message using user input values
+				const customMessage = `
+					<html style="font-size: 12px;">
+						<body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
+							<h2>Horários Preferidos:</h2>
+							<p>Nome: ${name}</p>
+							<p>Email: ${email}</p>
+							<p>Telefone: ${phone}</p>
+							<p>Horários Preferidos:</p>
+							<p>${availability}</p>
+							<p>Equipamento que possuo:</p>
+							<p>${equipment}</p>
+						</body>
+					</html>`;
 
-    // Create the custom message using user input values
-    const customMessage = `
-			<html style="font-size: 12px;">
-				<body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
-					<h2>Horários Preferidos:</h2>
-					<p>Nome: ${name}</p>
-					<p>Email: ${email}</p>
-					<p>Telefone: ${phone}</p>
-					<p>Horários Preferidos:</p>
-					<p>${availability}</p>
-					<p>Equipamento que possuo:</p>
-					<p>${equipment}</p>
-				</body>
-			</html>`;
+				// Encode the custom message to be used in the mailto: link
+				const encodedMessage = encodeURIComponent(customMessage);
 
-    // Encode the custom message to be used in the custom link
-    const encodedMessage = encodeURIComponent(customMessage);
+				// Create the mailto: link with the encoded message
+				const mailtoLink = `mailto:vocalizo.canto@gmail.com?subject=Aula%20de%20Canto%20-%20Horários%20Preferidos&body=${encodedMessage}`;
 
-    // Create the custom link with the encoded message
-    const customLink = `data:text/html;charset=utf-8,${encodedMessage}`;
+				// Open the mailto: link in a new tab
+				window.open(mailtoLink, "_blank");
+			}
 
-    // Open the custom link in a new tab
-    window.open(customLink, "_blank");
-  }
+			// Add event listener to the form for form submission
+			const form = document.querySelector("form");
+			form.addEventListener("submit", handleSubmit);
 
-  // Add event listener to the form for form submission
-  const form = document.querySelector("form");
-  form.addEventListener("submit", handleSubmit);
+			const navLinks = document.querySelectorAll("nav ul li a");
+			const sections = document.querySelectorAll(".section");
+			const burgerMenu = document.querySelector(".burger-menu");
+			const navBar = document.querySelector(".nav-bar");
 
-      const navLinks = document.querySelectorAll("nav ul li a");
-      const sections = document.querySelectorAll(".section");
-      const burgerMenu = document.querySelector(".burger-menu");
-      const navBar = document.querySelector(".nav-bar");
+			navLinks.forEach((link) => {
+				// Add click event listener to each navigation link
+				link.addEventListener("click", (event) => {
+					event.preventDefault();
+					const targetId = link.getAttribute("href").substring(1);
+					sections.forEach((section) => {
+						section.style.display = "none";
+					});
+					document.getElementById(targetId).style.display = "block";
+				});
+			});
 
-      navLinks.forEach((link) => {
-        // Add click event listener to each navigation link
-        link.addEventListener("click", (event) => {
-          event.preventDefault();
-          const targetId = link.getAttribute("href").substring(1);
-          sections.forEach((section) => {
-            section.style.display = "none";
-          });
-          document.getElementById(targetId).style.display = "block";
-        });
-      });
+			burgerMenu.addEventListener("click", () => {
+				navBar.classList.toggle("active");
+			});
 
-      burgerMenu.addEventListener("click", () => {
-        navBar.classList.toggle("active");
-      });
-    
 		</script>
 	</body>
 </website>
