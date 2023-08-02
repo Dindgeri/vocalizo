@@ -226,6 +226,44 @@
       </section>
     </div>
     <script>
+
+  // Function to handle form submission
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    // Get user input values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const availability = document.getElementById("availability").value;
+    const equipment = document.getElementById("equipment").value;
+
+    // Create the custom message using user input values
+    const customMessage = `<html style="font-size: 12px;"><body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
+      <h2>Horários Preferidos:</h2>
+      <p>Nome: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Telefone: ${phone}</p>
+      <p>Horários Preferidos:</p>
+      <p>${availability}</p>
+      <p>Equipamento que possuo:</p>
+      <p>${equipment}</p>
+    </body></html>`;
+
+    // Encode the custom message to be used in the custom link
+    const encodedMessage = encodeURIComponent(customMessage);
+
+    // Create the custom link with the encoded message
+    const customLink = `data:text/html;charset=utf-8,${encodedMessage}`;
+
+    // Open the custom link in a new tab
+    window.open(customLink, "_blank");
+  }
+
+  // Add event listener to the form for form submission
+  const form = document.querySelector("form");
+  form.addEventListener("submit", handleSubmit);
+
       const navLinks = document.querySelectorAll("nav ul li a");
       const sections = document.querySelectorAll(".section");
       const burgerMenu = document.querySelector(".burger-menu");
