@@ -244,7 +244,7 @@
 				const encodedMessage = encodeURIComponent(customMessage);
 
 				// Create the mailto: link with the encoded message
-				const mailtoLink = `mailto:vocalizo.canto@gmail.com?subject=Aula%20de%20Canto%20-%20Horários%20Preferidos&body=${encodedMessage}`;
+				const mailtoLink = "mailto:vocalizo.canto@gmail.com?subject=Aula%20de%20Canto%20-%20Horários%20Preferidos&body=" + encodedMessage;
 
 				// Open the mailto: link in a new tab
 				window.open(mailtoLink, "_blank");
