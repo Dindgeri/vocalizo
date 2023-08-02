@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <website
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:css="http://www.w3.org/2001/XMLSchema-css">
-  <head>
-    <title>Vocalizo - Aulas de canto &amp; voz</title>
-    <style>
-      <![CDATA[
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:css="http://www.w3.org/2001/XMLSchema-css">
+	<head>
+		<title>Vocalizo - Aulas de canto &amp; voz</title>
+		<style>
+			<![CDATA[
       body {
         font-family: "Arial", sans-serif;
         margin: 0 auto;
@@ -140,78 +140,77 @@
       }
 
       ]]>
-    </style>
-  </head>
-  <body>
-    <header>
-
-<!-- SVG Logo for Singing Classes -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
-  <path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
-</svg>
-
-<!-- Burger Menu for Singing Classes -->
-<div class="burger-menu">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
-  <path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
-</svg>
-</div>
-
-      <nav class="nav-bar">
-        <ul>
-          <li>
-            <a href="#home">Início</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="#schedule">Horários</a>
-          </li>
-          <li>
-            <a href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="content">
-      <section id="home" class="section">
-        <h1>Bem-vind✨s à Vocalizo</h1>
-        <p>Vem explorar a voz que habita em ti</p>
-        <p>Email: vocalizo.canto@gmail.com</p>
-        <p>📍Lisboa ~ Leiria • online desde tua 🏡</p>
-      </section>
-      <section id="about" class="section">
-        <h2>Sobre</h2>
-        <p>Sê bem-vind@ à Vocalizo! Se estás ainda mais curios@ em experimentar as nossas aulas, a nossa porta está aberta a conhecer-vos, possuidores dessas vozes maravilhosas! Vamos lá? - Samanta 🌼</p>
-        <p>Sobre as coisas boas que nos acontecem quando cantamos e nos dedicamos ao máximo em aula 🧡 E tu, que benefícios conheces mais ligados a esta maravilhosa forma de expressão? Conta-nos 🪶</p>
-      </section>
-      <section id="schedule" class="section">
-        <h2>Horários</h2>
-        <p>Preenche a lista abaixo com os teus horários preferidos para poderes agendar as tuas aulas de canto e voz:</p>
-        <!-- Form -->
-        <form>
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name"></input>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"></input>
-          <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone"></input>
-          <label for="availability">Horários Preferidos:</label>
-          <textarea id="availability" name="availability" rows="4"></textarea>
-          <label for="equipment">Equipamento que possuo:</label>
-          <input type="text" id="equipment" name="equipment"></input>
-          <input type="submit" value="Enviar"></input>
-        </form>
-        <p>Lembra-te que é importante ter equipamento pessoal para praticar em casa, como auscultadores e um microfone. Um bom ritmo com os trabalhos de casa é a chave para o melhor resultado nas aulas!</p>
-      </section>
-      <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <p>Para qualquer questão ou esclarecimento, não hesites em contactar-nos através das informações fornecidas no nosso perfil do Instagram.</p>
-        <p>Fica atento ao nosso Instagram para atualizações, novidades e anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje mesmo!</p>
-      </section>
-    </div>
-    <script>
+		</style>
+	</head>
+	<body>
+		<header>
+			<!-- SVG Logo for Singing Classes -->
+			<svg
+				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
+				<path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
+			</svg>
+			<!-- Burger Menu for Singing Classes -->
+			<div class="burger-menu">
+				<svg
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo burger-menu">
+					<path fill="#000000" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"/>
+				</svg>
+			</div>
+			<nav class="nav-bar">
+				<ul>
+					<li>
+						<a href="#home">Início</a>
+					</li>
+					<li>
+						<a href="#about">Sobre</a>
+					</li>
+					<li>
+						<a href="#schedule">Horários</a>
+					</li>
+					<li>
+						<a href="#contact">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content">
+			<section id="home" class="section">
+				<h1>Bem-vind✨s à Vocalizo</h1>
+				<p>Vem explorar a voz que habita em ti</p>
+				<p>Email: vocalizo.canto@gmail.com</p>
+				<p>📍Lisboa ~ Leiria • online desde tua 🏡</p>
+			</section>
+			<section id="about" class="section">
+				<h2>Sobre</h2>
+				<p>Sê bem-vind@ à Vocalizo! Se estás ainda mais curios@ em experimentar as nossas aulas, a nossa porta está aberta a conhecer-vos, possuidores dessas vozes maravilhosas! Vamos lá? - Samanta 🌼</p>
+				<p>Sobre as coisas boas que nos acontecem quando cantamos e nos dedicamos ao máximo em aula 🧡 E tu, que benefícios conheces mais ligados a esta maravilhosa forma de expressão? Conta-nos 🪶</p>
+			</section>
+			<section id="schedule" class="section">
+				<h2>Horários</h2>
+				<p>Preenche a lista abaixo com os teus horários preferidos para poderes agendar as tuas aulas de canto e voz:</p>
+				<!-- Form -->
+				<form>
+					<label for="name">Nome:</label>
+					<input type="text" id="name" name="name"></input>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"></input>
+					<label for="phone">Telefone:</label>
+					<input type="tel" id="phone" name="phone"></input>
+					<label for="availability">Horários Preferidos:</label>
+					<textarea id="availability" name="availability" rows="4"></textarea>
+					<label for="equipment">Equipamento que possuo:</label>
+					<input type="text" id="equipment" name="equipment"></input>
+					<input type="submit" value="Enviar"></input>
+				</form>
+				<p>Lembra-te que é importante ter equipamento pessoal para praticar em casa, como auscultadores e um microfone. Um bom ritmo com os trabalhos de casa é a chave para o melhor resultado nas aulas!</p>
+			</section>
+			<section id="contact" class="section">
+				<h2>Contacto</h2>
+				<p>Para qualquer questão ou esclarecimento, não hesites em contactar-nos através das informações fornecidas no nosso perfil do Instagram.</p>
+				<p>Fica atento ao nosso Instagram para atualizações, novidades e anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje mesmo!</p>
+			</section>
+		</div>
+		<script>
 
   // Function to handle form submission
   function handleSubmit(event) {
@@ -225,16 +224,19 @@
     const equipment = document.getElementById("equipment").value;
 
     // Create the custom message using user input values
-    const customMessage = `<html style="font-size: 12px;"><body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
-      <h2>Horários Preferidos:</h2>
-      <p>Nome: ${name}</p>
-      <p>Email: ${email}</p>
-      <p>Telefone: ${phone}</p>
-      <p>Horários Preferidos:</p>
-      <p>${availability}</p>
-      <p>Equipamento que possuo:</p>
-      <p>${equipment}</p>
-    </body></html>`;
+    const customMessage = `
+			<html style="font-size: 12px;">
+				<body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
+					<h2>Horários Preferidos:</h2>
+					<p>Nome: ${name}</p>
+					<p>Email: ${email}</p>
+					<p>Telefone: ${phone}</p>
+					<p>Horários Preferidos:</p>
+					<p>${availability}</p>
+					<p>Equipamento que possuo:</p>
+					<p>${equipment}</p>
+				</body>
+			</html>`;
 
     // Encode the custom message to be used in the custom link
     const encodedMessage = encodeURIComponent(customMessage);
@@ -270,6 +272,7 @@
       burgerMenu.addEventListener("click", () => {
         navBar.classList.toggle("active");
       });
-    </script>
-  </body>
+    
+		</script>
+	</body>
 </website>
