@@ -6,17 +6,16 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:css="http://www.w3.org/2001/XMLSchema-css">
 	<head>
-		<title>Vocalizo - Aulas de canto &amp; voz</title>
-
-<style>
-  <![CDATA[
+		<title>Vocalizo - Singing &amp; Voice Classes</title>
+		<style>
+			<![CDATA[
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
   :root {
     --purple: #5F0F40;
     --river-green: #52B788;
     --grey: #777777;
-    --light-river-green: #ABEBC6;
+    --light-silver-grey: #EAEAEA;
   }
 
   body {
@@ -25,6 +24,7 @@
     max-width: 800px;
     padding: 20px;
     color: var(--grey);
+    background-color: var(--light-silver-grey);
   }
 
   .logo {
@@ -41,7 +41,7 @@
   .nav-bar {
     display: flex;
     justify-content: center;
-    background: var(--light-river-green);
+    background: var(--light-silver-grey);
     padding: 10px;
   }
 
@@ -57,7 +57,7 @@
   }
 
   .nav-bar ul li a {
-    color: #FFF;
+    color: var(--grey);
     text-decoration: none;
   }
 
@@ -67,7 +67,7 @@
 
   .section {
     display: none;
-    background: var(--light-river-green);
+    background: var(--light-silver-grey);
     border-bottom: 1px solid var(--grey);
     border-right: 1px solid var(--grey);
     padding: 10px;
@@ -154,7 +154,7 @@
 
     .nav-bar ul {
       flex-direction: column;
-      background: var(--light-river-green);
+      background: var(--light-silver-grey);
       padding: 10px;
       display: none;
       font-size: 24px;
@@ -169,9 +169,8 @@
       margin-bottom: 10px;
     }
   }
-  ]]>
-</style>
-
+			]]>
+		</style>
 	</head>
 	<body>
 		<header>
@@ -190,16 +189,16 @@
 			<nav class="nav-bar">
 				<ul>
 					<li>
-						<a href="#home">Início</a>
+						<a href="#home">🏠 Home</a>
 					</li>
 					<li>
-						<a href="#about">Sobre</a>
+						<a href="#about">📖 About</a>
 					</li>
 					<li>
-						<a href="#schedule">Horários</a>
+						<a href="#schedule">🗓️ Schedule</a>
 					</li>
 					<li>
-						<a href="#contact">Contacto</a>
+						<a href="#contact">📞 Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -209,7 +208,7 @@
 				<h1>Bem-vind✨s à Vocalizo</h1>
 				<p>Vem explorar a voz que habita em ti</p>
 				<p>Email: vocalizo.canto@gmail.com</p>
-				<p>📍Lisboa ~ Leiria • online desde tua 🏡</p>
+				<p>📍 Lisboa ~ Leiria • online desde tua 🏡</p>
 			</section>
 			<section id="about" class="section">
 				<h2>Sobre</h2>
