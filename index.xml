@@ -10,20 +10,21 @@
 
 <style>
   <![CDATA[
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
   :root {
     --purple: #5F0F40;
     --river-green: #52B788;
-    --dark-grey: #333333;
+    --grey: #777777;
     --light-river-green: #ABEBC6;
-    --font-family: "Arial", sans-serif;
   }
 
   body {
-    font-family: var(--font-family);
+    font-family: 'Montserrat', monospace;
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    color: var(--dark-grey);
+    color: var(--grey);
   }
 
   .logo {
@@ -67,8 +68,8 @@
   .section {
     display: none;
     background: var(--light-river-green);
-    border-bottom: 1px solid var(--dark-grey);
-    border-right: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
     padding: 10px;
   }
 
@@ -85,7 +86,7 @@
   h2 {
     font-size: 24px;
     margin-top: 20px;
-    color: var(--dark-grey);
+    color: var(--grey);
   }
 
   p {
@@ -114,6 +115,11 @@
 
   svg path {
     fill: var(--purple);
+  }
+
+  .emoji {
+    font-size: 18px;
+    margin-right: 5px;
   }
 
   @media only screen and (max-width: 1080px) {
