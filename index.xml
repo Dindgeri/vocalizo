@@ -7,7 +7,7 @@
   xmlns:css="http://www.w3.org/2001/XMLSchema-css"
 >
   <head>
-    <title>Vocalizo - Aulas de canto &amp; voz</title>
+    <title>Vocalizo - Singing &amp; Voice Lessons</title>
     <style>
       <![CDATA[
         body {
@@ -15,7 +15,7 @@
           margin: 0 auto;
           max-width: 800px;
           padding: 20px;
-          background-color: #eaeaea;
+          background-color: #f2f2f2;
         }
 
         .logo {
@@ -58,6 +58,11 @@
 
         .section {
           display: none;
+          background-color: #52b788;
+          color: #fff;
+          padding: 20px;
+          margin-top: 20px;
+          border-radius: 10px;
         }
 
         .section#home {
@@ -197,6 +202,16 @@
         <p>Vem explorar a voz que habita em ti</p>
         <p>Email: vocalizo.canto@gmail.com</p>
         <p>📍Lisboa ~ Leiria • online desde tua 🏡</p>
+        <p>
+          Welcome to Vocalizo! If you are curious to experience our singing
+          lessons, our door is open to meet you, owners of those wonderful
+          voices! Let's go? - Samanta 🌼
+        </p>
+        <p>
+          About the good things that happen to us when we sing and dedicate
+          ourselves to the fullest in class 🧡 What other benefits do you know
+          related to this wonderful form of expression? Tell us 🪶
+        </p>
       </section>
       <section id="about" class="section">
         <h2>Sobre</h2>
@@ -210,6 +225,16 @@
           Sobre as coisas boas que nos acontecem quando cantamos e nos
           dedicamos ao máximo em aula 🧡 E tu, que benefícios conheces mais
           ligados a esta maravilhosa forma de expressão? Conta-nos 🪶
+        </p>
+        <p>
+          Welcome to Vocalizo! If you are curious to experience our singing
+          lessons, our door is open to meet you, owners of those wonderful
+          voices! Let's go? - Samanta 🌼
+        </p>
+        <p>
+          About the good things that happen to us when we sing and dedicate
+          ourselves to the fullest in class 🧡 What other benefits do you know
+          related to this wonderful form of expression? Tell us 🪶
         </p>
       </section>
       <section id="schedule" class="section">
@@ -237,6 +262,19 @@
           em casa, como auscultadores e um microfone. Um bom ritmo com os
           trabalhos de casa é a chave para o melhor resultado nas aulas!
         </p>
+        <p>
+          Fill in the list below with your preferred schedules so you can
+          schedule your singing and voice lessons:
+        </p>
+        <p>
+          Name: [Your Name]<br />
+          Email: [Your Email]<br />
+          Phone: [Your Phone]<br />
+          Preferred Schedules:<br />
+          [Your Preferred Schedules]<br />
+          Equipment I have:<br />
+          [Your Equipment]<br />
+        </p>
       </section>
       <section id="contact" class="section">
         <h2>Contacto</h2>
@@ -249,6 +287,14 @@
           Fica atento ao nosso Instagram para atualizações, novidades e
           anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje
           mesmo!
+        </p>
+        <p>
+          For any questions or clarifications, feel free to contact us
+          through the information provided in our Instagram profile.
+        </p>
+        <p>
+          Stay tuned to our Instagram for updates, news, and announcements
+          about our lessons. Join our vocal community today!
         </p>
       </section>
     </div>
