@@ -20,10 +20,10 @@
 
   body {
     font-family: 'Montserrat', monospace;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     color: var(--grey);
+    background-color: var(--light-silver-grey);
   }
 
   .logo {
@@ -68,20 +68,23 @@
     padding: 10px;
   }
 
-  .section#home {
+  .section {
     display: block;
+    padding-bottom: 20px;
   }
 
   h1 {
     text-align: center;
     font-size: 32px;
     color: var(--purple);
+    margin-bottom: 10px;
   }
 
   h2 {
     font-size: 24px;
     margin-top: 20px;
     color: var(--grey);
+    margin-bottom: 10px;
   }
 
   p {
@@ -184,16 +187,16 @@
 			<nav class="nav-bar">
 				<ul>
 					<li>
-						<a href="#home">🏠 Início</a>
+						<a href="#home">Início</a>
 					</li>
 					<li>
-						<a href="#about">📖 Sobre</a>
+						<a href="#about">Sobre</a>
 					</li>
 					<li>
-						<a href="#schedule">🗓️ Horários</a>
+						<a href="#schedule">Horários</a>
 					</li>
 					<li>
-						<a href="#contact">📞 Contacto</a>
+						<a href="#contact">Contacto</a>
 					</li>
 				</ul>
 			</nav>
@@ -202,12 +205,10 @@
 			<section id="home" class="section">
 				<h1>Bem-vind✨s à Vocalizo</h1>
 				<p>Vem explorar a voz que habita em ti</p>
-				<p>Email: vocalizo.canto@gmail.com</p>
 				<p>📍 Lisboa ~ Leiria • online desde tua 🏡</p>
 				<!-- English Text Below -->
 				<h2>Welcome to Vocalizo</h2>
 				<p>Explore the voice within you</p>
-				<p>Email: vocalizo.canto@gmail.com</p>
 				<p>📍 Lisbon ~ Leiria • online from your 🏡</p>
 			</section>
 			<section id="about" class="section">
@@ -267,65 +268,16 @@
 			</section>
 		</div>
 		<script>
-			// Function to handle form submission
-			function handleSubmit(event) {
-				event.preventDefault();
-
-				// Get user input values
-				const name = document.getElementById("name").value;
-				const email = document.getElementById("email").value;
-				const phone = document.getElementById("phone").value;
-				const availability = document.getElementById("availability").value;
-				const equipment = document.getElementById("equipment").value;
-
-				// Create the custom message using user input values
-				const customMessage = `
-					<html style="font-size: 12px;">
-						<body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
-							<h2>Horários Preferidos:</h2>
-							<p>Nome: ${name}</p>
-							<p>Email: ${email}</p>
-							<p>Telefone: ${phone}</p>
-							<p>Horários Preferidos:</p>
-							<p>${availability}</p>
-							<p>Equipamento que possuo:</p>
-							<p>${equipment}</p>
-						</body>
-					</html>`;
-
-				// Encode the custom message to be used in the mailto: link
-				const encodedMessage = encodeURIComponent(customMessage);
-
-				// Create the mailto: link with the encoded message
-				const mailtoLink = "mailto:vocalizo.canto@gmail.com?subject=Aula%20de%20Canto%20-%20Horários%20Preferidos&amp;body=" + encodedMessage;
-
-				// Open the mailto: link in a new tab
-				window.open(mailtoLink, "_blank");
-			}
-
-			// Add event listener to the form for form submission
-			const form = document.querySelector("form");
-			form.addEventListener("submit", handleSubmit);
-
-			const navLinks = document.querySelectorAll("nav ul li a");
 			const sections = document.querySelectorAll(".section");
 			const burgerMenu = document.querySelector(".burger-menu");
 			const navBar = document.querySelector(".nav-bar");
 
-			navLinks.forEach((link) => {
-				// Add click event listener to each navigation link
-				link.addEventListener("click", (event) => {
-					event.preventDefault();
-					const targetId = link.getAttribute("href").substring(1);
-					sections.forEach((section) => {
-						section.style.display = "none";
-					});
-					document.getElementById(targetId).style.display = "block";
-				});
-			});
-
 			burgerMenu.addEventListener("click", () => {
 				navBar.classList.toggle("active");
+			});
+
+			sections.forEach((section) => {
+				section.style.display = "block";
 			});
 
 		</script>
