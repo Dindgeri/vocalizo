@@ -6,7 +6,7 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:css="http://www.w3.org/2001/XMLSchema-css">
 	<head>
-		<title>Vocalizo - Singing &amp; Voice Classes</title>
+		<title>Vocalizo - Aulas de canto &amp; voz</title>
 		<style>
 			<![CDATA[
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -24,7 +24,6 @@
     max-width: 800px;
     padding: 20px;
     color: var(--grey);
-    background-color: var(--light-silver-grey);
   }
 
   .logo {
@@ -63,11 +62,7 @@
 
   .content {
     margin-top: 20px;
-  }
-
-  .section {
-    display: none;
-    background: var(--light-silver-grey);
+    background-color: var(--light-silver-grey);
     border-bottom: 1px solid var(--grey);
     border-right: 1px solid var(--grey);
     padding: 10px;
@@ -189,16 +184,16 @@
 			<nav class="nav-bar">
 				<ul>
 					<li>
-						<a href="#home">🏠 Home</a>
+						<a href="#home">🏠 Início</a>
 					</li>
 					<li>
-						<a href="#about">📖 About</a>
+						<a href="#about">📖 Sobre</a>
 					</li>
 					<li>
-						<a href="#schedule">🗓️ Schedule</a>
+						<a href="#schedule">🗓️ Horários</a>
 					</li>
 					<li>
-						<a href="#contact">📞 Contact</a>
+						<a href="#contact">📞 Contacto</a>
 					</li>
 				</ul>
 			</nav>
@@ -209,11 +204,20 @@
 				<p>Vem explorar a voz que habita em ti</p>
 				<p>Email: vocalizo.canto@gmail.com</p>
 				<p>📍 Lisboa ~ Leiria • online desde tua 🏡</p>
+				<!-- English Text Below -->
+				<h2>Welcome to Vocalizo</h2>
+				<p>Explore the voice within you</p>
+				<p>Email: vocalizo.canto@gmail.com</p>
+				<p>📍 Lisbon ~ Leiria • online from your 🏡</p>
 			</section>
 			<section id="about" class="section">
 				<h2>Sobre</h2>
 				<p>Sê bem-vind@ à Vocalizo! Se estás ainda mais curios@ em experimentar as nossas aulas, a nossa porta está aberta a conhecer-vos, possuidores dessas vozes maravilhosas! Vamos lá? - Samanta 🌼</p>
 				<p>Sobre as coisas boas que nos acontecem quando cantamos e nos dedicamos ao máximo em aula 🧡 E tu, que benefícios conheces mais ligados a esta maravilhosa forma de expressão? Conta-nos 🪶</p>
+				<!-- English Text Below -->
+				<h2>About</h2>
+				<p>Welcome to Vocalizo! If you're even more curious to try our singing classes, our door is open to meet you, possessors of these wonderful voices! Let's do this? - Samanta 🌼</p>
+				<p>About the good things that happen to us when we sing and dedicate ourselves to the fullest in class 🧡 And you, what benefits do you know most related to this wonderful form of expression? Share with us 🪶</p>
 			</section>
 			<section id="schedule" class="section">
 				<h2>Horários</h2>
@@ -233,11 +237,33 @@
 					<input type="submit" value="Enviar"></input>
 				</form>
 				<p>Lembra-te que é importante ter equipamento pessoal para praticar em casa, como auscultadores e um microfone. Um bom ritmo com os trabalhos de casa é a chave para o melhor resultado nas aulas!</p>
+				<!-- English Text Below -->
+				<h2>Schedule</h2>
+				<p>Fill in the list below with your preferred schedules to schedule your singing and voice lessons:</p>
+				<!-- Form -->
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name"></input>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"></input>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone"></input>
+					<label for="availability">Preferred Schedules:</label>
+					<textarea id="availability" name="availability" rows="4"></textarea>
+					<label for="equipment">Equipment I have:</label>
+					<input type="text" id="equipment" name="equipment"></input>
+					<input type="submit" value="Submit"></input>
+				</form>
+				<p>Remember that it's important to have personal equipment for practicing at home, such as headphones and a microphone. A good homework rhythm is the key to the best results in classes!</p>
 			</section>
 			<section id="contact" class="section">
 				<h2>Contacto</h2>
 				<p>Para qualquer questão ou esclarecimento, não hesites em contactar-nos através das informações fornecidas no nosso perfil do Instagram.</p>
 				<p>Fica atento ao nosso Instagram para atualizações, novidades e anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje mesmo!</p>
+				<!-- English Text Below -->
+				<h2>Contact</h2>
+				<p>For any questions or clarifications, don't hesitate to contact us through the information provided in our Instagram profile.</p>
+				<p>Stay tuned to our Instagram for updates, news, and announcements of our classes. Join our vocal community today!</p>
 			</section>
 		</div>
 		<script>
