@@ -68,11 +68,7 @@
     border-bottom: 1px solid var(--dark-grey);
     border-right: 1px solid var(--dark-grey);
     padding: 10px;
-  }
-
-  .section {
     display: none;
-    padding-bottom: 20px;
   }
 
   .section#home {
@@ -279,14 +275,31 @@
 			const sections = document.querySelectorAll(".section");
 			const burgerMenu = document.querySelector(".burger-menu");
 			const navBar = document.querySelector(".nav-bar");
+			const navLinks = document.querySelectorAll("nav ul li a");
+
+			navLinks.forEach((link) => {
+				link.addEventListener("click", (event) => {
+					event.preventDefault();
+					const targetId = link.getAttribute("href");
+					const targetSection = document.querySelector(targetId);
+					if (targetSection) {
+						sections.forEach((section) => {
+							section.style.display = "none";
+						});
+						targetSection.style.display = "block";
+						navBar.classList.remove("active");
+					}
+				});
+			});
 
 			burgerMenu.addEventListener("click", () => {
 				navBar.classList.toggle("active");
 			});
 
-			sections.forEach((section) => {
-				section.style.display = "block";
-			});
+			const homeSection = document.getElementById("home");
+			if (homeSection) {
+				homeSection.style.display = "block";
+			}
 
 		</script>
 	</body>
