@@ -11,18 +11,18 @@
     <style>
       <![CDATA[
         body {
-          font-family: "Century Gothic", sans-serif;
+          font-family: "Arial", sans-serif;
           margin: 0 auto;
           max-width: 800px;
           padding: 20px;
-          background-color: #d9d9d9; /* Slightly darker grey */
+          background-color: #f2f2f2;
         }
 
         .logo {
           display: block;
           margin: 0 auto;
           width: 100px;
-          fill: #3d2d5a; /* Bluer purple */
+          fill: #5f0f40;
         }
 
         .burger-menu {
@@ -32,7 +32,7 @@
         .nav-bar {
           display: flex;
           justify-content: center;
-          background: #3d2d5a; /* Bluer purple */
+          background: #5f0f40;
           padding: 10px;
         }
 
@@ -58,7 +58,7 @@
 
         .section {
           display: none;
-          background-color: #a2c523; /* Lighter green */
+          background-color: #52b788;
           color: #fff;
           padding: 20px;
           margin-top: 20px;
@@ -72,13 +72,13 @@
         h1 {
           text-align: center;
           font-size: 24px;
-          color: #3d2d5a; /* Bluer purple */
+          color: #5f0f40;
         }
 
         h2 {
           font-size: 18px;
           margin-top: 20px;
-          color: #3d2d5a; /* Bluer purple */
+          color: #5f0f40;
         }
 
         p {
@@ -98,12 +98,12 @@
         }
 
         .green {
-          background-color: #a2c523; /* Lighter green */
+          background-color: #52b788;
           color: #fff;
         }
 
         .purple {
-          background-color: #3d2d5a; /* Bluer purple */
+          background-color: #5f0f40;
           color: #fff;
         }
 
@@ -133,13 +133,13 @@
           .burger-menu {
             display: block;
             cursor: pointer;
-            fill: #3d2d5a; /* Bluer purple */
+            fill: #5f0f40;
             margin-right: 80%;
           }
 
           .nav-bar ul {
             flex-direction: column;
-            background: #3d2d5a; /* Bluer purple */
+            background: #5f0f40;
             padding: 10px;
             display: none;
             font-size: 24px;
@@ -166,7 +166,7 @@
         viewBox="0 0 24 24"
       >
         <path
-          fill="#3d2d5a" <!-- Bluer purple -->
+          fill="#5f0f40"
           d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"
         />
       </svg>
@@ -174,7 +174,7 @@
       <div class="burger-menu">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
-            fill="#3d2d5a" <!-- Bluer purple -->
+            fill="#5f0f40"
             d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z"
           />
         </svg>
@@ -182,32 +182,26 @@
       <nav class="nav-bar">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">Início</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#schedule">Horários</a>
           </li>
           <li>
-            <a href="#schedule">Contacto</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
     <div class="content">
       <section id="home" class="section">
-        <h1>Welcome to Vocalizo✨</h1>
-        <p>Explore the voice within you</p>
+        <h1>Bem-vind✨s à Vocalizo</h1>
+        <p>Vem explorar a voz que habita em ti</p>
         <p>Email: vocalizo.canto@gmail.com</p>
-        <p>📍Lisbon ~ Leiria • online from your 🏡</p>
-        <p>
-          About the positive effects of singing and fully dedicating ourselves in class 🧡 What other benefits do you know related to this wonderful form of expression? Share with us 🪶
-        </p>
-      </section>
-      <section id="about" class="section">
-        <h2>About</h2>
+        <p>📍Lisboa ~ Leiria • online desde tua 🏡</p>
         <p>
           Welcome to Vocalizo! If you are curious to experience our singing
           lessons, our door is open to meet you, owners of those wonderful
@@ -219,8 +213,81 @@
           related to this wonderful form of expression? Tell us 🪶
         </p>
       </section>
+      <section id="about" class="section">
+        <h2>Sobre</h2>
+        <p>
+          Sê bem-vind@ à Vocalizo! Se estás ainda mais curios@ em
+          experimentar as nossas aulas, a nossa porta está aberta a
+          conhecer-vos, possuidores dessas vozes maravilhosas! Vamos lá?
+          - Samanta 🌼
+        </p>
+        <p>
+          Sobre as coisas boas que nos acontecem quando cantamos e nos
+          dedicamos ao máximo em aula 🧡 E tu, que benefícios conheces mais
+          ligados a esta maravilhosa forma de expressão? Conta-nos 🪶
+        </p>
+        <p>
+          Welcome to Vocalizo! If you are curious to experience our singing
+          lessons, our door is open to meet you, owners of those wonderful
+          voices! Let's go? - Samanta 🌼
+        </p>
+        <p>
+          About the good things that happen to us when we sing and dedicate
+          ourselves to the fullest in class 🧡 What other benefits do you know
+          related to this wonderful form of expression? Tell us 🪶
+        </p>
+      </section>
+      <section id="schedule" class="section">
+        <h2>Horários</h2>
+        <p>
+          Preenche a lista abaixo com os teus horários preferidos para
+          poderes agendar as tuas aulas de canto e voz:
+        </p>
+        <!-- Form -->
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" />
+          <label for="availability">Horários Preferidos:</label>
+          <textarea id="availability" name="availability" rows="4"></textarea>
+          <label for="equipment">Equipamento que possuo:</label>
+          <input type="text" id="equipment" name="equipment" />
+          <input type="submit" value="Enviar" />
+        </form>
+        <p>
+          Lembra-te que é importante ter equipamento pessoal para praticar
+          em casa, como auscultadores e um microfone. Um bom ritmo com os
+          trabalhos de casa é a chave para o melhor resultado nas aulas!
+        </p>
+        <p>
+          Fill in the list below with your preferred schedules so you can
+          schedule your singing and voice lessons:
+        </p>
+        <p>
+          Name: [Your Name]<br />
+          Email: [Your Email]<br />
+          Phone: [Your Phone]<br />
+          Preferred Schedules:<br />
+          [Your Preferred Schedules]<br />
+          Equipment I have:<br />
+          [Your Equipment]<br />
+        </p>
+      </section>
       <section id="contact" class="section">
         <h2>Contacto</h2>
+        <p>
+          Para qualquer questão ou esclarecimento, não hesites em
+          contactar-nos através das informações fornecidas no nosso perfil
+          do Instagram.
+        </p>
+        <p>
+          Fica atento ao nosso Instagram para atualizações, novidades e
+          anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje
+          mesmo!
+        </p>
         <p>
           For any questions or clarifications, feel free to contact us
           through the information provided in our Instagram profile.
@@ -228,29 +295,6 @@
         <p>
           Stay tuned to our Instagram for updates, news, and announcements
           about our lessons. Join our vocal community today!
-        </p>
-        <p>
-          📷 Follow us on Instagram: <a href="https://instagram.com/vocalizo">instagram.com/vocalizo</a>
-        </p>
-      </section>
-      <section id="schedule" class="section">
-        <h2>Contacto</h2>
-        <!-- Simplified Contact Form -->
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" />
-          <label for="availability">Preferred Schedules:</label>
-          <textarea id="availability" name="availability" rows="4"></textarea>
-          <label for="equipment">Equipment I have:</label>
-          <input type="text" id="equipment" name="equipment" />
-          <input type="submit" value="Submit" />
-        </form>
-        <p>
-          Remember, having personal equipment for practice at home, such as headphones and a microphone, is important. A good rhythm with homework is the key to the best results in class!
         </p>
       </section>
     </div>
@@ -270,13 +314,13 @@
         const customMessage = `
           <html style="font-size: 12px;">
             <body style="font-family: Monaco, monospace; text-align: left;" contenteditable="true">
-              <h2>Preferred Schedules:</h2>
-              <p>Name: ${name}</p>
+              <h2>Horários Preferidos:</h2>
+              <p>Nome: ${name}</p>
               <p>Email: ${email}</p>
-              <p>Phone: ${phone}</p>
-              <p>Preferred Schedules:</p>
+              <p>Telefone: ${phone}</p>
+              <p>Horários Preferidos:</p>
               <p>${availability}</p>
-              <p>Equipment I have:</p>
+              <p>Equipamento que possuo:</p>
               <p>${equipment}</p>
             </body>
           </html>`;
@@ -286,7 +330,7 @@
 
         // Create the mailto: link with the encoded message
         const mailtoLink =
-          "mailto:vocalizo.canto@gmail.com?subject=Singing%20Class%20-%20Preferred%20Schedules&amp;body=" +
+          "mailto:vocalizo.canto@gmail.com?subject=Aula%20de%20Canto%20-%20Horários%20Preferidos&amp;body=" +
           encodedMessage;
 
         // Open the mailto: link in a new tab
