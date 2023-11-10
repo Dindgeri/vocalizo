@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE website [
+  <!ENTITY css "http://www.w3.org/2001/XMLSchema-css">
+]>
+<website xmlns="http://www.w3.org/1999/xhtml" xmlns:css="http://www.w3.org/2001/XMLSchema-css" lang="en">
+  <head>
+    <title>Vocalizo - Singing &amp; Voice Lessons</title>
+    <style>
+      <![CDATA[
+        body {
+          font-family: "Arial", sans-serif;
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 20px;
+          background-color: #f2f2f2;
+        }
+
+        .logo {
+          display: block;
+          margin: 0 auto;
+          width: 100px;
+          fill: #5f0f40;
+        }
+
+        .burger-menu {
+          display: none;
+        }
+
+        .nav-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #5f0f40;
+          padding: 10px;
+        }
+
+        .nav-bar ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+        }
+
+        .nav-bar ul li {
+          margin-right: 10px;
+        }
+
+        .nav-bar ul li a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        .content {
+          margin-top: 20px;
+        }
+
+        .section {
+          display: none;
+          background-color: #52b788;
+          color: #fff;
+          padding: 20px;
+          margin-top: 20px;
+          border-radius: 10px;
+        }
+
+        .section[lang="en"] {
+          display: block;
+        }
+
+        h1, h2 {
+          text-align: center;
+          color: #5f0f40;
+        }
+
+        p {
+          margin-bottom: 10px;
+          text-align: justify;
+          color: #333;
+        }
+
+        ul {
+          margin-top: 10px;
+          padding-left: 20px;
+          color: #333;
+        }
+
+        .rounded {
+          border-radius: 10px;
+        }
+
+        .green {
+          background-color: #52b788;
+          color: #fff;
+        }
+
+        .purple {
+          background-color: #5f0f40;
+          color: #fff;
+        }
+
+        @media only screen and (max-width: 1080px) {
+          .nav-bar {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .nav-bar ul {
+            flex-direction: column;
+            background: #5f0f40;
+            padding: 10px;
+            display: none;
+            font-size: 24px;
+          }
+
+          .nav-bar.active ul {
+            display: flex;
+          }
+
+          .nav-bar ul li {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+
+          h1 {
+            font-size: 32px;
+          }
+
+          h2 {
+            font-size: 24px;
+            margin-top: 20px;
+          }
+
+          p {
+            font-size: 24px;
+          }
+
+          .logo {
+            display: none;
+          }
+
+          .burger-menu {
+            display: block;
+            cursor: pointer;
+            fill: #5f0f40;
+            margin-right: 0;
+          }
+        }
+      ]]>
+    </style>
+  </head>
+  <body>
+    <header>
+      <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24">
+        <path fill="#5f0f40" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z" />
+      </svg>
+      <div class="burger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="burgerIcon">
+          <path fill="#5f0f40" d="M12,2C7,2,3,5.03,3,9v6c0,3.97,4,7,9,7s9-3.03,9-7V9C21,5.03,17,2,12,2z M12,19c-3.86,0-7-2.91-7-6V9c0-3.09,3.14-5,7-5s7,1.91,7,5v4C19,16.09,15.86,19,12,19z M12,11.5c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,11.5,12,11.5z" />
+        </svg>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="mailto:vocalizo.singing@gmail.com" data-lang="en">Email</a>
+          </li>
+          <li>
+            <a href="https://wa.me/00351912345670" target="_blank" data-lang="en">WhatsApp</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/vocalizo" target="_blank" data-lang="en">Instagram</a>
+          </li>
+        </ul>
+        <button onclick="toggleLanguage()">Click 🌐 Me</button>
+      </nav>
+    </header>
+    <div class="content">
+      <section id="home" class="section" lang="en">
+        <h1 data-lang="en">Welcome to Vocalizo</h1>
+        <p data-lang="en">Explore the voice within you</p>
+        <p data-lang="en">Email: vocalizo.singing@gmail.com</p>
+        <p data-lang="en">📍Lisbon ~ Leiria • online from your 🏡</p>
+      </section>
+      <section id="home-pt" class="section" lang="pt">
+        <h1 data-lang="pt">Bem-vind!s à Vocalizo</h1>
+        <p data-lang="pt">Vem explorar a voz que habita em ti</p>
+        <p data-lang="pt">Email: vocalizo.canto@gmail.com</p>
+        <p data-lang="pt">📍Lisboa ~ Leiria • online desde tua 🏡</p>
+      </section>
+      <section id="schedule" class="section" lang="en" style="display: block;">
+        <h2 data-lang="en">Schedules</h2>
+        <p data-lang="en">Fill in the form below to request your preferred singing lesson schedules:</p>
+        <form onsubmit="handleSubmit(event)">
+          <label for="name-en" data-lang="en">Name:</label>
+          <input type="text" id="name-en" name="name" />
+          <label for="availability-en" data-lang="en">Free days:</label>
+          <input type="text" id="availability-en" name="availability" />
+          <label for="freehours-en" data-lang="en">Free times:</label>
+          <input type="text" id="freehours-en" name="freehours" />
+          <input type="submit" value="Submit" />
+        </form>
+        <p data-lang="en">Remember to have personal equipment for practice at home, such as headphones and a microphone. Consistent practice is key for the best results!</p>
+      </section>
+      <section id="schedule-pt" class="section" lang="pt" style="display: none;">
+        <h2 data-lang="pt">Horários</h2>
+        <p data-lang="pt">Preenche a lista abaixo com os teus horários preferidos para poderes agendar as tuas aulas de canto e voz:</p>
+        <form onsubmit="handleSubmit(event)">
+          <label for="name-pt" data-lang="pt">Nome:</label>
+          <input type="text" id="name-pt" name="name" />
+          <label for="availability-pt" data-lang="pt">Dias livres:</label>
+          <input type="text" id="availability-pt" name="availability" />
+          <label for="freehours-pt" data-lang="pt">Horas livres:</label>
+          <input type="text" id="freehours-pt" name="freehours" />
+          <input type="submit" value="Enviar" />
+        </form>
+        <p data-lang="pt">Lembra-te que é importante ter equipamento pessoal para praticar em casa, como auscultadores e um microfone. Um bom ritmo com os trabalhos de casa é a chave para o melhor resultado nas aulas!</p>
+      </section>
+      <section id="ig-content" class="section" lang="en" style="display: none;">
+        <h2 data-lang="en">Instagram Content</h2>
+        <p data-lang="en">Stay tuned to our Instagram for updates, news, and announcements about our lessons. Join our vocal community today!</p>
+      </section>
+      <section id="ig-content-pt" class="section" lang="pt" style="display: none;">
+        <h2 data-lang="pt">Conteúdo no Instagram</h2>
+        <p data-lang="pt">Fica atento ao nosso Instagram para atualizações, novidades e anúncios das nossas aulas. Junta-te à nossa comunidade vocal hoje mesmo!</p>
+      </section>
+      <section id="home-es" class="section" lang="es" style="display: none;">
+        <h1 data-lang="es">Bienvenido/a a Vocalizo</h1>
+        <p data-lang="es">Explora la voz que llevas dentro</p>
+        <p data-lang="es">Email: vocalizo.canto@gmail.com</p>
+        <p data-lang="es">📍Lisboa ~ Leiria • online desde tu 🏡</p>
+      </section>
+      <section id="schedule-es" class="section" lang="es" style="display: none;">
+        <h2 data-lang="es">Horarios</h2>
+        <p data-lang="es">Completa el formulario a continuación para solicitar tus horarios preferidos para las clases de canto:</p>
+        <form onsubmit="handleSubmit(event)">
+          <label for="name-es" data-lang="es">Nombre:</label>
+          <input type="text" id="name-es" name="name" />
+          <label for="availability-es" data-lang="es">Días libres:</label>
+          <input type="text" id="availability-es" name="availability" />
+          <label for="freehours-es" data-lang="es">Horas libres:</label>
+          <input type="text" id="freehours-es" name="freehours" />
+          <input type="submit" value="Enviar" />
+        </form>
+        <p data-lang="es">Recuerda tener equipo personal para practicar en casa, como auriculares y un micrófono. ¡La práctica constante es clave para obtener los mejores resultados!</p>
+      </section>
+      <section id="ig-content-es" class="section" lang="es" style="display: none;">
+        <h2 data-lang="es">Contenido en Instagram</h2>
+        <p data-lang="es">Mantente atento a nuestro Instagram para actualizaciones, noticias y anuncios sobre nuestras clases. ¡Únete a nuestra comunidad vocal hoy mismo!</p>
+      </section>
+    </div>
+    <script>
+      <![CDATA[
+        function hideSectionsExcept(lang) {
+          const sections = document.querySelectorAll('.section');
+          sections.forEach((section) => {
+            const sectionLang = section.getAttribute('lang');
+            section.style.display = sectionLang === lang ? 'block' : 'none';
+          });
+        }
+
+        function initializePage() {
+          const lang = document.documentElement.getAttribute("lang");
+          hideSectionsExcept(lang);
+
+          // Add event listener to the burger menu icon
+          const burgerMenu = document.querySelector('.burger-menu');
+          burgerMenu.addEventListener("click", () => {
+            document.querySelector('.nav-bar').classList.toggle('active');
+          });
+        }
+
+        function handleSubmit(event) {
+          event.preventDefault();
+          const lang = document.documentElement.getAttribute("lang");
+          const nameInput = document.getElementById(`name-${lang}`);
+          const availabilityInput = document.getElementById(`availability-${lang}`);
+          const freehoursInput = document.getElementById(`freehours-${lang}`);
+
+          const name = nameInput.value;
+          const email = lang === "en" ? "vocalizo.singing@gmail.com" : "vocalizo.canto@gmail.com";
+          const availability = availabilityInput.value;
+          const freehours = freehoursInput.value;
+          const subject = lang === "en" ? "Singing Lesson - Preferred Schedules" : "Aula de Canto - Horários Preferidos";
+          const body = `Name: ${name}\nFree days: ${availability}\nFree times: ${freehours}`;
+          const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.open(mailtoLink, "_blank");
+        }
+
+        function toggleLanguage() {
+          const lang = document.documentElement.getAttribute('lang');
+          const newLang = lang === 'en' ? 'pt' : lang === 'pt' ? 'es' : 'en'; // Toggle between en, pt, and es
+          document.documentElement.setAttribute('lang', newLang);
+
+          hideSectionsExcept(newLang);
+
+          const navLinks = document.querySelectorAll('nav ul li a');
+          navLinks.forEach((link) => {
+            const targetId = link.getAttribute('href').substring(1);
+            const isEnglish = newLang === 'en';
+            const isPortuguese = newLang === 'pt';
+            const isSpanish = newLang === 'es';
+
+            switch (targetId) {
+              case 'home':
+                link.textContent = isEnglish ? 'Home' : isPortuguese ? 'Bem-vindo' : 'Bienvenido/a';
+                break;
+              case 'schedule':
+                link.textContent = isEnglish ? 'Schedules' : isPortuguese ? 'Horários' : 'Horarios';
+                break;
+              case 'ig-content':
+                link.textContent = isEnglish ? 'Instagram' : isPortuguese ? 'Redes sociais' : 'Redes sociales';
+                break;
+            }
+          });
+        }
+
+        window.onload = initializePage;
+      ]]>
+    </script>
+  </body>
+</website>
