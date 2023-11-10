@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Singer Page</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -82,7 +83,11 @@
   <header>
     <div class="burger-menu">
       <input type="checkbox" id="burger-checkbox">
-      <label for="burger-checkbox"><div></div><div></div><div></div></label>
+      <label for="burger-checkbox">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
     </div>
     <h1>Rock Singer</h1>
   </header>
@@ -120,11 +125,7 @@
       var nav = document.querySelector('nav');
 
       burgerCheckbox.addEventListener('change', function () {
-        if (burgerCheckbox.checked) {
-          nav.style.display = 'flex';
-        } else {
-          nav.style.display = 'none';
-        }
+        nav.style.display = burgerCheckbox.checked ? 'flex' : 'none';
       });
     });
   </script>
