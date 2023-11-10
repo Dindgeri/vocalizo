@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style><![CDATA[
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 1em;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5em 0;
+      font-size: 1.2em;
+    }
+
+    .burger-menu {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+    }
+
+    .burger-menu div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    #burger-checkbox {
+      display: none;
+    }
+
+    #burger-checkbox:checked + nav {
+      display: flex;
+    }
+
+    #burger-checkbox:checked + nav + label div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #burger-checkbox:checked + nav + label div:nth-child(2) {
+      opacity: 0;
+    }
+
+    #burger-checkbox:checked + nav + label div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  ]]></style>
+</head>
+<body>
+
+  <header>
+    <div class="burger-menu">
+      <input type="checkbox" id="burger-checkbox">
+      <label for="burger-checkbox"><div></div><div></div><div></div></label>
+    </div>
+    <h1>Rock Singer</h1>
+  </header>
+
+  <nav>
+    <a href="#my-life">My Life</a>
+    <a href="#my-books">My Books</a>
+    <a href="#my-work">My Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="my-life">
+    <h2>My Life</h2>
+    <p>Insert your content about your life here.</p>
+  </section>
+
+  <section id="my-books">
+    <h2>My Books</h2>
+    <p>Insert your content about your books here.</p>
+  </section>
+
+  <section id="my-work">
+    <h2>My Work</h2>
+    <p>Insert your content about your work as a rock singer here.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Insert your contact information here.</p>
+  </section>
+
+  <script><![CDATA[
+    // You can add JavaScript code here if needed
+  ]]></script>
+
+</body>
+</html>
