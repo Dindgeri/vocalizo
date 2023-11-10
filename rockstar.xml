@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style><![CDATA[
+  <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -76,7 +75,7 @@
     #burger-checkbox:checked + nav + label div:nth-child(3) {
       transform: rotate(45deg) translate(-5px, -6px);
     }
-  ]]></style>
+  </style>
 </head>
 <body>
 
@@ -115,9 +114,20 @@
     <p>Insert your contact information here.</p>
   </section>
 
-  <script><![CDATA[
-    // You can add JavaScript code here if needed
-  ]]></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var burgerCheckbox = document.getElementById('burger-checkbox');
+      var nav = document.querySelector('nav');
+
+      burgerCheckbox.addEventListener('change', function () {
+        if (burgerCheckbox.checked) {
+          nav.style.display = 'flex';
+        } else {
+          nav.style.display = 'none';
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
