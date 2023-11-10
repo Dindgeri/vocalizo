@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>&lt;![CDATA[
+  <style><![CDATA[
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -76,7 +76,7 @@
     #burger-checkbox:checked + nav + label div:nth-child(3) {
       transform: rotate(45deg) translate(-5px, -6px);
     }
-  ]]&gt;</style>
+  ]]></style>
 </head>
 <body>
 
@@ -115,10 +115,9 @@
     <p>Insert your contact information here.</p>
   </section>
 
-  <script>&lt;![CDATA[
+  <script><![CDATA[
     // You can add JavaScript code here if needed
-  ]]&gt;</script>
+  ]]></script>
 
 </body>
 </html>
-
